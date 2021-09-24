@@ -19,5 +19,8 @@ $ py main.py # start the server
 #### with docker
 
 ```bash
+$ docker build --tag kitchen . # create kitchen image
+$ docker network create nt # create docker network 
+$ docker run -d --net nt --name kitchen kitchen # run docker container on created network
 ```
 
